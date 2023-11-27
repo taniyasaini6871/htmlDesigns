@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+     
+
+    <style>
+        progress::-webkit-progress-value {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="w-full h-screen bg-slate-100 flex flex-col justify-center items-center">
+
+            <!-- <div class="flex">
+                <div class="w-full h-1 border-b-2 border-b-blue-700 absolute top-1/2  "></div>
+            </div> -->
+            <progress class="w-96 h-1 bg-blue-700" id="file" value="50" max="100"> 50% </progress>
+            <ol class="flex space-x-16 absolute">
+                <li>
+                    <a class=" text-blue-900 hover:text-blue-500" href="#">
+                        <svg class="w-8 h-8  bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                            fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zm7.072 3.21l4.318-5.398-.78-.624-3.682 4.601L4.32 7.116l-.64.768 3.392 2.827z"
+                                fill="currentColor"></path>
+                        </svg>  
+                    </a>
+                </li>
+
+                <li>
+                    <a class=" text-blue-900 hover:text-blue-500" href="#">
+                        <svg class="w-8 h-8 bg-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                            fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zm7.072 3.21l4.318-5.398-.78-.624-3.682 4.601L4.32 7.116l-.64.768 3.392 2.827z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <svg class="w-8 h-8 bg-slate-100" fill="blue" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
+                            <path
+                                d="M256 56c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m0-48C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 168c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a class="group block" href="#">
+                        <div
+                            class="h-8 w-8 rounded-full border border-gray-600 bg-slate-50 flex justify-center items-center">
+                            <div class="w-4 h-4 rounded-full border bg-black invisible group-hover:visible"></div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="group block" href="#">
+                        <div
+                            class="h-8 w-8 rounded-full border border-gray-600 bg-slate-50 flex justify-center items-center">
+                            <div class="w-4 h-4 rounded-full border bg-black invisible group-hover:visible"></div>
+                        </div>
+                    </a>
+                </li>
+
+            </ol>
+
+        </section>
+    </main>
+</body>
+
+</html>

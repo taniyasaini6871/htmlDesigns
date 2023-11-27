@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroplane</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="h-screen">
+    <main class="flex justify-between border h-full text-lg">
+        <section class="flex justify-center items-center md:w-1/2 w-full py-16">
+            <div class="space-y-5 p-6 w-full max-w-3xl">
+                <img class="w-16 h-16" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <header class="space-y-2">
+                    <h1 class="font-bold text-2xl">Sign in to your account</h1>
+                    <div>
+                        <span>Not a member?</span>
+                        <a href="#" class="text-purple-900">Start a 14 day trial</a>
+                    </div>
+                </header>
+                <form class="space-y-3" action="">
+                    <div class="flex flex-col space-y-2">
+                        <label for="email">Email address</label>
+                        <input class="w-72 md:w-full border-2 border-black rounded" type="email" name="email" id="email">
+                    </div>
+                    <div class="flex flex-col space-y-2">
+                        <label for="password">Password</label>
+                        <input class="w-72 md:w-full border-2 border-black rounded" type="password" name="password" id="password">
+                    </div>
+                    <div class="flex justify-between">
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Remember Me</label>
+                        </div>
+                        <a class="text-blue-900" href="#">Forget Password?</a>
+                    </div>
+                    <button class="bg-purple-900 text-white rounded md:w-full w-72">Sign In</button>
+                    <div class="text-center relative after:border after:absolute after:border-red-900"><span>Or Continue With</span></div>
+                    <div class="flex md:gap-10 w-full gap-6">
+                        <a class="bg-blue-500 md:w-52 w-32 text-white text-center rounded" href="#">Twitter</a>
+                        <a class="bg-black text-white md:w-52 w-32 text-center rounded" href="#">Git Hub</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="w-1/2 hidden md:block">
+            <img class="w-full h-full object-cover" src="laptop.avif" alt="Error">
+        </div>
+    </main>
+</body>
+
+</html>

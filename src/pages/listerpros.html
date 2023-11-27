@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListerPros</title>
+    <link rel="stylesheet" href="../../dist/output.css">
+</head>
+
+<body class="flex">
+    <aside class="border w-52 h-screen hidden lg:block">
+        <div class="w-48 p-4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlMktS5XA_u1YEsqqRqStwDUdb_dBRO_1K17il728&s"
+                alt="">
+        </div>
+        <nav>
+
+        </nav>
+    </aside>
+
+    <main class="lg:w-[calc(100%-13rem)] border bg-slate-200 w-full">
+        <header>
+            <div class="flex justify-between p-4">
+                <h1 class="text-lg text-gray-700">Welcome, Admin Jordan</h1>
+                <a href="#" class="w-8 mr-8 hidden sm:block ">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUvMqcR7wxVEns0-fCI21s0dGaJ80F1L5YCxALVg&s"
+                        alt="user-icon">
+                </a>
+                <svg class="w-6 h-6 sm:hidden" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15"
+                    fill="currentColor">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.5 3C1.22386 3 1 3.22386 1 3.5C1 3.77614 1.22386 4 1.5 4H13.5C13.7761 4 14 3.77614 14 3.5C14 3.22386 13.7761 3 13.5 3H1.5ZM1 7.5C1 7.22386 1.22386 7 1.5 7H13.5C13.7761 7 14 7.22386 14 7.5C14 7.77614 13.7761 8 13.5 8H1.5C1.22386 8 1 7.77614 1 7.5ZM1 11.5C1 11.2239 1.22386 11 1.5 11H13.5C13.7761 11 14 11.2239 14 11.5C14 11.7761 13.7761 12 13.5 12H1.5C1.22386 12 1 11.7761 1 11.5Z"
+                        fill="currentColor"></path>
+                </svg>
+            </div>
+
+            <div class="p-2 space-y-2">
+                <h2 class="text-lg font-medium pl-1">Manage Customers</h2>
+                <form action="#" class="flex flex-col space-y-2 md:space-y-0 md:flex-row justify-between">
+                    <label for="search" class="hidden">searching</label>
+                    <input class="p-2 w-80 rounded-lg outline-none" type="search" name="search" id="search"
+                        placeholder="Search by name or email">
+                    <button class="uppercase bg-blue-500 text-white py-2 px-4 rounded-lg mr-4">+ add
+                        customer</button>
+                </form>
+            </div>
+        </header>
+
+        <section class="bg-white mx-4 mt-3">
+            <header class="lg:grid grid-cols-8 mx-auto hidden p-2 gap-2 font-medium text-gray-700">
+                <div class="col-span-2 flex">
+                    <span class="flex-1">S.no.</span>
+                    <span class="flex-1">Name</span>
+                </div>
+
+                <div class="col-span-3 flex ">
+                    <span class="flex-1">Phone Number</span>
+                    <span class="flex-1">Registration On</span>
+                    <span class="flex-1">Total Orders</span>
+                </div>
+
+                <div class="col-span-3 flex">
+                    <span class="flex-1">Sales Tax</span>
+                    <span class="flex-1">Status</span>
+                    <span class="flex-1">Action </span>
+                </div>
+            </header>
+
+            <div class="grid grid-cols-8 w-full gap-2  p-2">
+
+                <article class="md:col-span-2 col-span-4 flex">
+                    <span class="hidden lg:block flex-1">1</span>
+                    <div class="flex-1">
+                        <h2 class="font-bold">Rohit Thakur</h2>
+                        <p class="text-sm lg:text-base">Email:adssmin@gmail.com
+                            <span class="block">Role:User</span>
+                            <span class="block lg:hidden">Sales Tax: Active</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="lg:col-span-3 col-span-4 flex">
+                    <div class="flex-1 hidden lg:block">(946) 412-0120</div>
+                    <div class="flex-1 block lg:hidden">Phone: (946) 412-0120
+                        <div>Registered On: 04 January, 2023</div>
+                    </div>
+                    <div class="flex-1 hidden lg:block">04 January, 2023 </div>
+                    <div class="flex-1 text-blue-500 underline hidden lg:block">0</div>
+                    <div class="flex-1 hidden md:block lg:hidden underline text-blue-400">Total Orders:0</div>
+                </div>
+
+                <div class="flex lg:col-span-3 md:col-span-2">
+                    <div class="flex-1 text-green-800 font-bold hidden md:block "><span
+                            class="bg-green-200 px-3 pb-1 rounded-xl">Active</span></div>
+                    <div class="flex-1 text-green-800 font-bold hidden lg:block"><span
+                            class="bg-green-200 px-3 pb-1 rounded-xl">Active</span></div>
+                    <div class="flex-1 hidden md:block "><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg></div>
+                </div>
+            </div>
+
+            <div class="flex justify-between md:hidden p-2">
+                <div class="flex-1 underline text-blue-400">Total Orders:0</div>
+                <div class="grid grid-cols-2 text-green-800 font-bold">
+                    <span class="bg-green-200 px-3 pb-1 rounded-xl flex-1">Active</span>
+
+                    <div class="flex-1"><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg></div>
+                </div>
+
+            </div>
+        </section>
+        <section class="bg-white mx-4 mt-1">
+            <div class="grid grid-cols-8 w-full gap-2  p-2 py-4">
+
+                <article class="md:col-span-2 col-span-4 flex">
+                    <span class="hidden lg:block flex-1">2</span>
+                    <div class="flex-1">
+                        <h2 class="font-bold">Rohit Thakur</h2>
+                        <p  class="text-sm lg:text-base">Email:adssmin@gmail.com
+                            <span class="block">Role:User</span>
+                            <span class="block lg:hidden">Sales Tax: Active</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="lg:col-span-3 col-span-4 flex">
+                    <div class="flex-1 hidden lg:block">(946) 412-0120</div>
+                    <div class="flex-1 block lg:hidden">Phone: (946) 412-0120
+                        <div>Registered On: 04 January, 2023</div>
+                    </div>
+                    <div class="flex-1 hidden lg:block">04 January, 2023 </div>
+                    <div class="flex-1 text-blue-500 underline hidden lg:block">0</div>
+                    <div class="flex-1 hidden md:block lg:hidden underline text-blue-400">Total Orders:0</div>
+                </div>
+
+                <div class="flex lg:col-span-3 md:col-span-2">
+                    <div class="flex-1 text-green-800 font-bold hidden md:block "><span
+                            class="bg-green-200 px-3 pb-1 rounded-xl">Active</span></div>
+                    <div class="flex-1 text-green-800 font-bold hidden lg:block"><span
+                            class="bg-green-200 px-3 pb-1 rounded-xl">Active</span></div>
+                    <div class="flex-1 hidden md:block "><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg></div>
+                </div>
+            </div>
+            <div class="flex justify-between md:hidden p-2">
+                <div class="flex-1 underline text-blue-400">Total Orders:0</div>
+                <div class="grid grid-cols-2 text-green-800 font-bold">
+                    <span class="bg-green-200 px-3 pb-1 rounded-xl flex-1">Active</span>
+
+                    <div class="flex-1"><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg></div>
+                </div>
+        </section>
+
+        <section class="bg-white mx-4 mt-1">
+            <div class="grid grid-cols-8 w-full gap-2  p-2 py-4">
+
+                <article class="md:col-span-2 col-span-4 flex">
+                    <span class="hidden lg:block flex-1">3</span>
+                    <div class="flex-1">
+                        <h2 class="font-bold">Rohit Thakur</h2>
+                        <p  class="text-sm lg:text-base">Email:adssmin@gmail.com
+                            <span class="block">Role:User</span>
+                            <span class="block lg:hidden">Sales Tax: Active</span>
+                        </p>
+                    </div>
+                </article>
+
+                <div class="lg:col-span-3 col-span-4 flex">
+                    <div class="flex-1 hidden lg:block">(946) 412-0120</div>
+                    <div class="flex-1 block lg:hidden">Phone: (946) 412-0120
+                        <div>Registered On: 04 January, 2023</div>
+                    </div>
+                    <div class="flex-1 hidden lg:block">04 January, 2023 </div>
+                    <div class="flex-1 text-blue-500 underline hidden lg:block">0</div>
+                    <div class="flex-1 hidden md:block lg:hidden underline text-blue-400">Total Orders:0</div>
+                </div>
+
+                <div class="flex lg:col-span-3 md:col-span-2">
+                    <div class="flex-1 text-green-800 font-bold hidden md:block ">
+                        <span class="bg-green-200 px-3 pb-1 rounded-xl">Active</span>
+                    </div>
+
+                    <div class="flex-1 text-green-800 font-bold hidden lg:block">
+                        <span class="bg-green-200 px-3 pb-1 rounded-xl">Active</span>
+                    </div>
+
+                    <div class="flex-1 hidden md:block "><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between md:hidden p-2">
+                <div class="flex-1 underline text-blue-400">Total Orders:0</div>
+                <div class="grid grid-cols-2 text-green-800 font-bold">
+                    <span class="bg-green-200 px-3 pb-1 rounded-xl flex-1">Active</span>
+                    <div class="flex-1"><svg class="w-6 h-6 " xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                            </path>
+                        </svg></div>
+                  </div> 
+        </section>
+    </main>
+
+</body>
+
+</html>

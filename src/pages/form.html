@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-slate-50">
+    <!-- <main> -->
+    <section class="flex flex-col justify-center md:flex-row md:gap-7 p-5">
+        <div class="p-12 w-full">
+            <form action="#" class="space-y-4">
+
+                <!-- fieldset-1 -->
+                <fieldset class="flex flex-col space-y-4 border-b-2 pb-8 ">
+                    <legend class="font-medium text-xl">Contact information</legend>
+                    <label class="text-gray-700 font-medium text-sm" for="email">Email address</label>
+                    <input type="email" id="email" class="border border-gray-300 rounded-lg w-full p-1">
+                </fieldset>
+
+                <!-- fieldset2 -->
+                <fieldset class="space-y-4">
+                    <legend class="font-medium text-xl">Shipping information </legend>
+                    <div class="flex gap-8">
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 block font-medium  text-sm" for="fname">First name</label>
+                            <input type="text" id="fname" class="border  border-gray-300 rounded-lg w-full p-1 ">
+                        </div>
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 block font-medium  text-sm" for="lname">Last name</label>
+                            <input type="text" id="lname" class="border  border-gray-300 rounded-lg w-full p-1">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="text-gray-700 block font-medium  text-sm" for="Company">Company</label>
+                        <input type="text" id="Company" class="border  border-gray-300 rounded-lg w-full p-1">
+                    </div>
+
+                    <div>
+                        <label class="text-gray-700 font-medium block  text-sm" for="address">Address</label>
+                        <input type="text" id="address" class="border  border-gray-300 rounded-lg w-full p-1">
+                    </div>
+
+                    <div>
+                        <label class="text-gray-700 font-medium block  text-sm " for="apartment">Apartment, suite,
+                            etc.</label>
+                        <input type="text" id="apartment" class="border  border-gray-300 w-full rounded-lg p-1">
+                    </div>
+
+                    <div class="flex gap-8">
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 font-medium  text-sm " for="City">City</label>
+                            <input type="text" id="City" class="border  border-gray-300 rounded-lg w-full p-1">
+                        </div>
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 font-medium  text-sm" for="Country">Country</label>
+                            <select name="Country" id="Country" class="border  border-gray-300 rounded-lg w-full p-1">
+                                <option value="volvo">India</option>
+                                <option value="saab">Canada</option>
+                                <option value="mercedes">USA</option>
+                                <option value="audi">Auatralia</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="flex gap-8">
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 font-medium block  text-sm " for="State">State /
+                                Province</label>
+                            <input type="text" id="State" class="border  border-gray-300 rounded-lg w-full p-1">
+                        </div>
+                        <div class="flex-1 space-y-1">
+                            <label class="text-gray-700 font-medium  text-sm " for="pcode">Postal code</label>
+                            <input type="text" id="pcode" class="border  border-gray-300 rounded-lg w-full p-1">
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-gray-700 font-medium  block text-sm" for="phone">Phone</label>
+                        <input type="tel" id="phone" maxlength="10"
+                            class="border  border-gray-300 w-full rounded-lg p-1">
+                    </div>
+                </fieldset>
+
+                <!-- fieldset3 -->
+                <fieldset class="space-y-2">
+                    <legend class="font-medium text-xl">Delivery method</legend>
+                    <div class="flex flex-col gap-3 sm:flex-row ">
+                        <label class="flex-1" for="standard">
+                            <input type="radio" name="standard" id="standard" class="peer/s hidden">
+                            <div
+                                class="border-2  h-full w-full bg-white peer-checked/s:ring-2 peer-checked/s:ring-blue-800 peer-checked/s:ring-offset-2 rounded-lg cursor-pointer p-4">
+                                <div class="flex justify-between">
+                                    <h2>Standard</h2>
+                                    <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 15 15" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zm7.072 3.21l4.318-5.398-.78-.624-3.682 4.601L4.32 7.116l-.64.768 3.392 2.827z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-500">4–10 business days</p>
+                                <span class="block mt-4">$5.00</span>
+                            </div>
+                        </label>
+
+                        <label class="flex-1" for="express">
+                            <input type="radio" name="standard" id="express" class="peer hidden">
+                            <div
+                                class="border-2 h-full w-full  bg-white peer-checked:ring-2 peer-checked:ring-blue-800 peer-checked:ring-offset-2 rounded-lg cursor-pointer p-4">
+                                <div class="flex justify-between">
+                                    <h2>Express</h2>
+                                    <svg class="w-4 h-4 text-blue-700" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 15 15" fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 7.5a7.5 7.5 0 1115 0 7.5 7.5 0 01-15 0zm7.072 3.21l4.318-5.398-.78-.624-3.682 4.601L4.32 7.116l-.64.768 3.392 2.827z"
+                                            fill="currentColor"></path>
+                                    </svg>
+                                </div>
+                                <p class="text-gray-500">2–5 business days</p>
+                                <span class="block mt-4">$16.00</span>
+                            </div>
+                        </label>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class=" w-full border rounded-2xl bg-white p-8">
+            <h1 class="font-medium text-xl">Order summary</h1>
+            <div class="flex gap-4 p-5 border-b">
+                <div class="w-20">
+                    <img class="object-cover object-center w-full h-full"
+                        src="https://tailwindui.com/img/ecommerce-images/checkout-page-02-product-01.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <div>
+                            <a href="#">Basic Tee</a>
+                            <span class="block text-gray-500">Black</span>
+                            <span class="text-gray-500">Large</span>
+                        </div>
+                        <div role="button">
+                            <svg class="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                                fill="none">
+                                <path
+                                    d="M20 10.5V11H28V10.5C28 8.29086 26.2091 6.5 24 6.5C21.7909 6.5 20 8.29086 20 10.5ZM17.5 11V10.5C17.5 6.91015 20.4101 4 24 4C27.5899 4 30.5 6.91015 30.5 10.5V11H41.75C42.4404 11 43 11.5596 43 12.25C43 12.9404 42.4404 13.5 41.75 13.5H38.8325L36.8329 37.3556C36.518 41.1117 33.3775 44 29.6082 44H18.3923C14.623 44 11.4825 41.1118 11.1676 37.3557L9.16749 13.5H6.25C5.55964 13.5 5 12.9404 5 12.25C5 11.5596 5.55964 11 6.25 11H17.5ZM21.5 20.25C21.5 19.5596 20.9404 19 20.25 19C19.5596 19 19 19.5596 19 20.25V34.75C19 35.4404 19.5596 36 20.25 36C20.9404 36 21.5 35.4404 21.5 34.75V20.25ZM27.75 19C27.0596 19 26.5 19.5596 26.5 20.25V34.75C26.5 35.4404 27.0596 36 27.75 36C28.4404 36 29 35.4404 29 34.75V20.25C29 19.5596 28.4404 19 27.75 19Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="mt-2 flex justify-between">
+                        <span class="mt-2">$32.00</span>
+                        <form action="#">
+                            <label for="clothes" class="hidden">choose number</label>
+
+                            <select name="clothes" id="clothes" class="border-2 px-2 py-1 text-center rounded-lg">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-4 p-5 border-b">
+                <div class="w-20">
+                    <img class="object-cover object-center w-full h-full"
+                        src="https://tailwindui.com/img/ecommerce-images/checkout-page-02-product-02.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <div class="flex justify-between">
+                        <div>
+                            <a href="#">Basic Tee</a>
+                            <span class="block text-gray-500">Sienna</span>
+                            <span class="text-gray-500">Large</span>
+                        </div>
+                            <div role="button">
+                                <svg class="w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 48 48" fill="none">
+                                    <path
+                                        d="M20 10.5V11H28V10.5C28 8.29086 26.2091 6.5 24 6.5C21.7909 6.5 20 8.29086 20 10.5ZM17.5 11V10.5C17.5 6.91015 20.4101 4 24 4C27.5899 4 30.5 6.91015 30.5 10.5V11H41.75C42.4404 11 43 11.5596 43 12.25C43 12.9404 42.4404 13.5 41.75 13.5H38.8325L36.8329 37.3556C36.518 41.1117 33.3775 44 29.6082 44H18.3923C14.623 44 11.4825 41.1118 11.1676 37.3557L9.16749 13.5H6.25C5.55964 13.5 5 12.9404 5 12.25C5 11.5596 5.55964 11 6.25 11H17.5ZM21.5 20.25C21.5 19.5596 20.9404 19 20.25 19C19.5596 19 19 19.5596 19 20.25V34.75C19 35.4404 19.5596 36 20.25 36C20.9404 36 21.5 35.4404 21.5 34.75V20.25ZM27.75 19C27.0596 19 26.5 19.5596 26.5 20.25V34.75C26.5 35.4404 27.0596 36 27.75 36C28.4404 36 29 35.4404 29 34.75V20.25C29 19.5596 28.4404 19 27.75 19Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                    </div>
+                    <div class="mt-2 flex justify-between">
+                        <span class="mt-2">$32.00</span>
+                        <form action="#">
+                            <label for="clothe" class="hidden">choose number</label>
+
+                            <select name="clothe" id="clothe" class="border-2 px-2 py-1 text-center rounded-lg">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between p-4">
+                <h3>Subtotal</h3>
+                <span>$64.00</span>
+            </div>
+            <div class="flex justify-between p-4">
+                <h3>Shipping</h3>
+                <span>$5.00</span>
+            </div>
+            <div class="flex justify-between p-4 border-b">
+                <h3>Taxes</h3>
+                <span>$6.00</span>
+            </div>
+
+            <div class="flex justify-between p-4 border-b font-medium">
+                <h3>Total</h3>
+                <span>$75.52</span>
+            </div>
+
+            <button  type="submit" class="text-center border bg-blue-800 w-full text-white p-3 rounded-xl">Confirm Order</button>
+    </section>
+    <!-- </main> -->
+</body>
+
+</html>
